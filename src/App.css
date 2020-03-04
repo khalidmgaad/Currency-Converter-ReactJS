@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F4F5F7;
+  font-family: 'Nunito';
+  font-weight: 600;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+  "a c"
+  "b c";
+  height: 70vh;
+  width: 70vw;
+}
+
+.card-from {
+  grid-area: a;
+}
+.card-to {
+  grid-area: b;
+}
+.currencies {
+  grid-area: c;
+}
+
+.inner-container {
+  padding: 0.5em;
+  background-color: linear-gradient(to bottom right,#F2F3F7,#F3F4F8);
+  margin: 10px;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px white, 3px 3px 15px rgba(0,0,0,0.1);
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  overflow: auto;
+}
+
+.currencies {
+ background-color: linear-gradient(to bottom right,#F2F3F7,#F3F4F8);
+ overflow: scroll;
+ margin: 10px;
+ padding: 1em 0;
+ border: 1px solid rgba(255,255,255,0.6);
+ border-radius: 10px;
+ box-shadow: -5px -5px 15px white, 3px 3px 15px rgba(0,0,0,0.1);
+}
+
+.selected-currency {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  margin: 0 20px;
+  padding-left: 10%;
+  height:60px;
+  width: 70%;
+  margin: 5px auto;
+
+  border: 1px solid white;
+  background-color: #F4F5F7;
+  box-shadow: -5px -5px 15px white, 3px 3px 15px rgba(0,0,0,0.1);
+  border-radius: 40px;
+}
+
+.active {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.currency-info {
+  max-height: 100px;
+  margin: 15px;
+}
+
+.currency-info p {
+  margin: 0px;
+}
+
+.currency-info .currency-description {
+  color: gray;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 20px;
+  padding-left: 10%;
+  height:60px;
+  margin: 5px auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.currency-icon {
+  width: 50px;
+  height: 40px;
+  object-fit:cover;
+  border-radius: 6px;
+}
+
+.amount-label {
+  padding: 10px 20px 2px 20px;
+  margin: 0 20px;
+  border: none;
+  color: #555;
+  font-weight: 400;
+  border-bottom: 1px solid lightgray;
+  font-size: 1.5em;
+  background-color: transparent;
+  outline: none;
+}
+
+.searchbar {
+  display: block;
+  padding: 10px 20px;
+  margin: auto;
+  width: 80%;
+  border: 1px solid white;
+  background-color: #F4F5F7;
+  box-shadow: -5px -5px 15px white, 3px 3px 15px rgba(0,0,0,0.1);
+  border-radius: 40px;
+  color: #555;
+  font-weight: 400;
+  font-size: 1em;
+  background-color: transparent;
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  margin: 10px auto;
+  width: 80%;
+  border: 1px solid white;
+
+  background-color: #F4F5F7;
+  box-shadow: -5px -5px 15px white, 3px 3px 15px rgba(0,0,0,0.1);
+  border-radius: 40px;
+}
+
+.controls a {
+  padding: 7px 15px;
+  width: 50%;
+  text-align: center;
+  font-weight: 700;
+  color: #555;
+  cursor: pointer;
+  /*border: 2px solid #98A5CA;*/
+  /*background-color: #F3F4F8;*/
+  transition: transform 0.4s ease-out, color 0.4s ease-out,background-color 0.4s ease-out;
+}
+
+.controls .active {
+  color: white;
+  background-color: #DBDCDE;
+}
+
+.controls .from {
+  border-radius: 40px 0 0 40px;
+}
+
+.controls .to {
+  border-radius: 0 40px 40px 0;
+}
+
+
+@media only screen and (max-width:746px){
+  .container {
+    display: grid;
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+    height: 100vh;
+    width: 80vw;
+  }
+
+  .currency-info .currency-description {
+    color: gray;
+    font-size: 0.8em;
+  }
+
+  .amount-label {
+    font-size: 1.3em;
+  }
+
+}
+
+
+
+
+
+
+
+
