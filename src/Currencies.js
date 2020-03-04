@@ -58,7 +58,7 @@ const Currencies = props => {
 					.map((currency) => {
 						return (
 							<div key={currency.id} className={CheckSelected(currency.id)} onClick={() => {currencyTapped(currency)}} >
-					          <img className="currency-icon" src={"Flags/"+currency.id.toLowerCase()+".svg"} alt="currency converted"/>
+					          <img className="currency-icon" src={"frags/"+currency.id.toLowerCase()+".svg"} alt="currency converted"/>
 					          <div className="currency-info">
 					            <p className="symbol">{currency.id}</p>
 					            <p className="currency-description">{currency.name}</p>
