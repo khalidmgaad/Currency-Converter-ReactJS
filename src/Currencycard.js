@@ -11,7 +11,7 @@ const Currencycard = props => {
   return (
         <div className="inner-container card-from" >
               <div className="selected-currency">
-                <img src={"/Flags/"+fromCurrency.id.toLowerCase()+".svg"} className="currency-icon" alt="currency converted"/>
+                <img src={"Flags/"+fromCurrency.id.toLowerCase()+".svg"} className="currency-icon" alt="currency converted"/>
                 <div className="currency-info">
                   <p className="symbol">{fromCurrency.id}</p>
                   <p className="currency-description">{fromCurrency.name}</p>

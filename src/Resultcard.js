@@ -8,7 +8,7 @@ const Resultcard = props => {
 	return (
 		<div className="inner-container card-to" >
 			<div className="selected-currency">
-				<img src={"/Flags/"+toCurrency.id.toLowerCase()+".svg"} className="currency-icon" alt="currency converted"/>
+				<img src={"Flags/"+toCurrency.id.toLowerCase()+".svg"} className="currency-icon" alt="currency converted"/>
 				<div className="currency-info">
 					<p className="symbol">{toCurrency.id}</p>
 					<p className="currency-description">{toCurrency.name}</p>
