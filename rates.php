@@ -1,3 +1,5 @@
+<?php 
+
 // Fetching JSON
 $req_url = 'https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD';
 $response_json = file_get_contents($req_url);
@@ -26,3 +28,6 @@ if(false !== $response_json) {
     }
 
 }
+
+
+php>
