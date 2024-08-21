@@ -17,7 +17,7 @@ const Currencycard = props => {
                   <p className="currency-description">{fromCurrency.name}</p>
                 </div>
               </div>
-              <input placeholder="Enter the amount here" className="amount-label" type="text" name="from" onChange={(e) => props.amount(e.target.value)}/>
+              <input placeholder="Amount" className="amount-label" type="text" name="from" onChange={(e) => props.amount(e.target.value)}/>
           </div>
   );
 
