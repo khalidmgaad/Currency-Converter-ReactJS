@@ -1,7 +1,7 @@
 <?php 
 
 // Fetching JSON
-$req_url = 'https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD';
+$req_url = 'https://v6.exchangerate-api.com/v6/bedbfefa706f3e90938450b9/latest/USD';
 $response_json = file_get_contents($req_url);
 
 // Continuing if we got a result
